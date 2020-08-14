@@ -2,9 +2,9 @@ FROM coolbeevip/docker-alpine-jre:1.8
 
 MAINTAINER coolbeevip <coolbeevip@gmail.com>
 
-ENV ZK_VERSION 3.4.9
+ENV ZK_VERSION 3.5.7
 ENV ZK_HOME /zookeeper
-ENV ZK_TAR zookeeper-${ZK_VERSION}.tar.gz
+ENV ZK_TAR apache-zookeeper-${ZK_VERSION}-bin.tar.gz
 
 RUN wget -q https://archive.apache.org/dist/zookeeper/zookeeper-${ZK_VERSION}/${ZK_TAR} && \
     tar -xzf ${ZK_TAR} && \
