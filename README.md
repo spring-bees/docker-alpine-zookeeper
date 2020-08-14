@@ -5,6 +5,7 @@ coolbeevip/docker-alpine-zookeeper
 -----
 ~~~~
 docker run \
+    --name zookeeper
     -p 2181:2181 \
     coolbeevip/docker-alpine-zookeeper
 ~~~~
